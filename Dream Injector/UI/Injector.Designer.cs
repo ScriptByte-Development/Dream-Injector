@@ -31,7 +31,6 @@ namespace Dream_Injector
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.exitBtn = new Siticone.UI.WinForms.SiticoneControlBox();
             this.siticoneControlBox1 = new Siticone.UI.WinForms.SiticoneControlBox();
             this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
@@ -54,17 +53,6 @@ namespace Dream_Injector
             this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dream Injector";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(156, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "User:";
             // 
             // exitBtn
             // 
@@ -250,7 +238,6 @@ namespace Dream_Injector
             this.Controls.Add(this.pathTextBox);
             this.Controls.Add(this.siticoneControlBox1);
             this.Controls.Add(this.exitBtn);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Injector";
@@ -265,7 +252,6 @@ namespace Dream_Injector
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private Siticone.UI.WinForms.SiticoneControlBox exitBtn;
         private Siticone.UI.WinForms.SiticoneControlBox siticoneControlBox1;
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl1;
