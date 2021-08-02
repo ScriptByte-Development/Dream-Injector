@@ -2,7 +2,7 @@
 C# DLL Injector
 
 # Compiled Downloads
-* [MediaFire](https://www.mediafire.com/file/8i4hdnzrchw7nmg/Dream_Injector.zip/file)
+* [MediaFire](https://www.mediafire.com/file/yj5eey7a4qq0c5p/Release1.1.rar/file)
 
 # Portability
 Dream Injector can be used anywhere without any cluttered files, all you need is the exe, it packs all the DLLs inside the executable
