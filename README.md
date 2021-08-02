@@ -12,3 +12,4 @@ Dream Injector can be used anywhere without any cluttered files, all you need is
 * Discord error: manage nuget packages and redownload [Discord Rich Presence by Lachee](https://github.com/Lachee/discord-rpc-csharp)
 * CosturaFody/Fody error: manage nuget packages and redownload Fody/or the Costura add on for Fody
 * Anything else, try running it with higher privilages
+* If all else fails, try join our [Discord](https://discord.gg/SpRYUvDDfy)
