@@ -121,6 +121,27 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="errorBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAANrSURBVGhD7dhNTxNBGAdwvokRMYggWNrSUimFUlootFB3QTCSaJRESDToRY0XP4AHDx48mBhj
+        on4bD16MQWN4aWnplt1uITqUeXy2zmQloux2ty9r+CeTJm0Pv/925kl3W07yv0admhPVxNwXXKtqfFZg
+        bzsjamJ+GeFUnZwDdeIKrlmqjs8ssY+bO0fgoRifgeL4TPOX+AceimMiKDGBylGhOUsYwIMSvQzKaIrK
+        kenmKmECX1lYoHlKVIEHeWQK5HCSFsLJxpawgIedYVxDCVoITTSmhA142AlNQmFwov4l1OTVJZvwv1Yw
+        TgvB8fqUqAEeCgPjIAXGaMEfrW2JGuJB6o+B5I/SvD9SmxJm8OrNO0B394CHlnZBmV88Dg953yjk+yI0
+        77W5hNkrX1p5xOh6iosrRvCw7R2BbU+Y5t1he0pUs23UpfuMrUdZuG0UD9vuYcj1DtGsK2StRLV7vnh9
+        mbH1yDM3zOAhdzEEuZ5Bmu0OVlfCyoFV5m8xtp6dxLxZPCAeshcGaLYrYK6EFbw2beTpa4ytZyeSqgYP
+        2a5LsNUZoNkOv7ESVvHaqJTxe4dCKUja1a8OD1vn+2Grw08z7ceUsANfGZX4+nvo9x9W8ZA554NMex/N
+        tHmPLsHuYcuW8WxUAtlnfCwgK3bgIXPWC+k2Tznd6vnzHhvxm3bhtWlD1RLjAxxsZe3CQ/qMG9Kt7nXG
+        1oP4Dbvw2rQ52M4zPkD525qN+F7YPO1aY2w9WEBEfNkOvDZtDjbSjA+w/+mznfhy+pTr6Mc02vMbxBOr
+        eO3Alle/Mj4ehw8fbcGnT7vIX/E8akwQEE+s4LUDW3zwBPZev8f1DpS7D+uD55G1EqMpUi3e3gNrEs+D
+        cAEXqRYvTcxB6enzysrHZ+uL56mUCCeJWXwhtXBojGr3AxKO6LrieeThhIB4YmbblJ69YHQ9Kv4Sdcfz
+        aCUQTozgtT2v3HvM2HpkfK8heB4pGBcQT4we2N2Xbyp/IWhRhd1XbytXv2F4Hq0E4slx+IYcWKORAjEB
+        8cSReB7JFxEQTxyJ58l6IgLiiSPxPDnPkIh44kg8T86FJXoGiSPxPLnuoIh44kg8T64zICKeOBLPk9FK
+        dPiJI/E8mXafiHjiSDxPps0jIp44Es9TKdHau4H3sOuOw5/EcFpafgLIcY5yXMmCJAAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <data name="busyBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQVJREFUOE+t

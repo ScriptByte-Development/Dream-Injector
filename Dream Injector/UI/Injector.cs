@@ -46,6 +46,7 @@ namespace Dream_Injector
 
         private void Start()
         {
+            errorBtn.Hide();
             Discord.Start();
             Structs.Idling();
             CheckWork();
@@ -132,6 +133,10 @@ namespace Dream_Injector
             }
             catch (Exception ex)
             {
+                errorBtn.Show();
+                FreeBtn.Hide();
+                busyBtn.Hide();
+                workLabel.Text = "An extreme error has occured";
                 MessageBox.Show("Dream Injector could not get the currenct process, try restarting application");
                 MessageBox.Show(ex.Message);
             }
@@ -159,6 +164,10 @@ namespace Dream_Injector
             } 
             catch (Exception ex)
             {
+                errorBtn.Show();
+                FreeBtn.Hide();
+                busyBtn.Hide();
+                workLabel.Text = "An extreme error has occured";
                 MessageBox.Show("Dream Injector ran into an error, screenshot the next messagebox and show a developer to fix it");
                 MessageBox.Show(ex.Message);
             }
@@ -257,6 +266,10 @@ namespace Dream_Injector
             }
             catch (Exception ex)
             {
+                errorBtn.Show();
+                FreeBtn.Hide();
+                busyBtn.Hide();
+                workLabel.Text = "An extreme error has occured";
                 MessageBox.Show("Dream Injector ran into an error starting vac bypasser, screenshot the next messagebox and show a developer");
                 MessageBox.Show(ex.Message);
             }

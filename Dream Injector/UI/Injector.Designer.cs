@@ -46,6 +46,7 @@ namespace Dream_Injector
             this.FreeBtn = new Siticone.UI.WinForms.SiticoneButton();
             this.workLabel = new System.Windows.Forms.Label();
             this.busyBtn = new Siticone.UI.WinForms.SiticoneButton();
+            this.errorBtn = new Siticone.UI.WinForms.SiticoneButton();
             this.SuspendLayout();
             // 
             // label1
@@ -321,12 +322,37 @@ namespace Dream_Injector
             this.busyBtn.Size = new System.Drawing.Size(24, 23);
             this.busyBtn.TabIndex = 26;
             // 
+            // errorBtn
+            // 
+            this.errorBtn.Animated = false;
+            this.errorBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
+            this.errorBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
+            this.errorBtn.BorderRadius = 4;
+            this.errorBtn.BorderThickness = 2;
+            this.errorBtn.CheckedState.Parent = this.errorBtn;
+            this.errorBtn.CustomImages.Parent = this.errorBtn;
+            this.errorBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
+            this.errorBtn.Font = new System.Drawing.Font("Sitka Text", 11.25F);
+            this.errorBtn.ForeColor = System.Drawing.Color.White;
+            this.errorBtn.HoveredState.Parent = this.errorBtn;
+            this.errorBtn.Image = ((System.Drawing.Image)(resources.GetObject("errorBtn.Image")));
+            this.errorBtn.ImageSize = new System.Drawing.Size(25, 25);
+            this.errorBtn.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.errorBtn.Location = new System.Drawing.Point(2, 392);
+            this.errorBtn.Name = "errorBtn";
+            this.errorBtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
+            this.errorBtn.PressedDepth = 0;
+            this.errorBtn.ShadowDecoration.Parent = this.errorBtn;
+            this.errorBtn.Size = new System.Drawing.Size(24, 23);
+            this.errorBtn.TabIndex = 27;
+            // 
             // Injector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(717, 418);
+            this.Controls.Add(this.errorBtn);
             this.Controls.Add(this.busyBtn);
             this.Controls.Add(this.workLabel);
             this.Controls.Add(this.FreeBtn);
@@ -368,6 +394,7 @@ namespace Dream_Injector
         public Siticone.UI.WinForms.SiticoneButton FreeBtn;
         private System.Windows.Forms.Label workLabel;
         public Siticone.UI.WinForms.SiticoneButton busyBtn;
+        public Siticone.UI.WinForms.SiticoneButton errorBtn;
     }
 }
 
