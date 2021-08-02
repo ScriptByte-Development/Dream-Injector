@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dream_Injector.Handler;
+using static Dream_Injector.Handler.Structs;
 
 namespace Dream_Injector
 {
@@ -40,7 +41,15 @@ namespace Dream_Injector
 
         private void Injector_Load(object sender, EventArgs e)
         {
+            Start();
+        }
+
+        private void Start()
+        {
             Discord.Start();
+            Structs.Idling();
+            CheckWork();
+            commonDropDown.Focus(); //focus on something other then a text box so it doesn't have the typing cursor at start up
             GetProcesses();
         }
 
@@ -54,6 +63,7 @@ namespace Dream_Injector
         {
             Structs.ResetAll();
             Structs.Selecting();
+            CheckWork();
             Discord.Update();
             ChooseDLL();
         }
@@ -63,13 +73,67 @@ namespace Dream_Injector
             GetProcesses();
         }
 
+        private void CheckWork()
+        {
+            if (DLLInjecting)
+            {
+                FreeBtn.Hide();
+                busyBtn.Show();
+                workLabel.Text = "Busy";
+            }
+            else if (Injected)
+            {
+                FreeBtn.Show();
+                busyBtn.Hide();
+                workLabel.Text = "Free";
+            }
+            else if (SelectingDLL)
+            {
+                FreeBtn.Hide();
+                busyBtn.Show();
+                workLabel.Text = "Busy";
+            }
+            else if (SelectedDLL)
+            {
+                FreeBtn.Show();
+                busyBtn.Hide();
+                workLabel.Text = "Free";
+            }
+            else if (GettingProcesses)
+            {
+                FreeBtn.Hide();
+                busyBtn.Show();
+                workLabel.Text = "Busy";
+            }
+            else if (Idle)
+            {
+                FreeBtn.Show();
+                busyBtn.Hide();
+                workLabel.Text = "Free";
+            }
+        }
+
         private void GetProcesses()
         {
-            Process[] PC = Process.GetProcesses().Where(p => (long)p.MainWindowHandle != 0).ToArray();
-            commonDropDown.Items.Clear();
-            foreach (Process p in PC)
+            try
             {
-                commonDropDown.Items.Add(p.ProcessName);
+                Processes();
+                CheckWork();
+                Process[] PC = Process.GetProcesses().Where(p => (long)p.MainWindowHandle != 0).ToArray();
+                commonDropDown.Items.Clear();
+                foreach (Process p in PC)
+                {
+                    commonDropDown.Items.Add(p.ProcessName);
+                    ResetProcess();
+                    FreeBtn.Show();
+                    busyBtn.Hide();
+                    workLabel.Text = "Free";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Dream Injector could not get the currenct process, try restarting application");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -90,12 +154,13 @@ namespace Dream_Injector
                 pathTextBox.Text = OFD.FileName;
                 Structs.ResetAll();
                 Structs.Selected();
+                CheckWork();
                 Discord.Update();
             } 
-            catch (Exception ed)
+            catch (Exception ex)
             {
                 MessageBox.Show("Dream Injector ran into an error, screenshot the next messagebox and show a developer to fix it");
-                MessageBox.Show(ed.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -158,6 +223,7 @@ namespace Dream_Injector
         {
             Structs.ResetAll();
             Structs.Injecting();
+            CheckWork();
             Discord.Update();
             int Result = Inject(commonDropDown.Text, DLLP);
             if (Result == 1)
@@ -178,8 +244,8 @@ namespace Dream_Injector
                 MessageBox.Show("Injection succeeded", Application.ProductName);
                 Structs.ResetAll();
                 Structs.Inject();
+                CheckWork();
                 Discord.Update();
-
             }
         }
 
@@ -189,16 +255,44 @@ namespace Dream_Injector
             {
                 Process.Start(string.Format("file:///{0}VAC-Bypass-Loader.exe", AppDomain.CurrentDomain.BaseDirectory));
             }
-            catch (Exception ed)
+            catch (Exception ex)
             {
                 MessageBox.Show("Dream Injector ran into an error starting vac bypasser, screenshot the next messagebox and show a developer");
-                MessageBox.Show(ed.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void commonDropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Discord.ShutDown();
+            Close();
+        }
+
+        private void miniBtn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void maxResetBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Maximize disabled", Application.ProductName);
+        }
+
+        //we dont want people clicking the button
+        private void workBtn_MouseHover(object sender, EventArgs e)
+        {
+            FreeBtn.Animated = false;
+            chooseBtn.Focus();
+        }
+
+        private void workBtn_Click(object sender, EventArgs e)
+        {
+            chooseBtn.Focus();
         }
     }
 }

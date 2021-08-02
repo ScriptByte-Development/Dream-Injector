@@ -120,4 +120,46 @@
   <metadata name="siticoneDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="busyBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQVJREFUOE+t
+        UasOwjAULYYvIASDRuIRYMiytptccBg+gSDw/AIhIACBmkfh8WiCIQi+AFvObW8CWTcYCTc56X2cc3q7
+        ib+EEaJipOwZrZNSIC40LIeBUhPA/AQpxyy3BqlH+I6U5QUGWu9wy8Drv/DFIIraJkmqyG/ezCHXYI2b
+        +zi7JgxbyEfYYoZzZftutmFursEFOFhofYb4aIKgaeK4hnrPM+IUGvigpyg19fqlDWgTpR5eP2OwyAzL
+        YM5ya9DAe5c4aZPUvl3K61t9tb1XvcS3qbPcD6ydEJFL90T0uPwccN8CJ4jugPsjlFMPM6YVB27qgBgD
+        Q+Tu31NOPcyY9q8Q4gkTwpDhc/lP7gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="FreeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAALRJREFUOE/N
+        krEKwjAQhu+VRBycfAydmztwVCdBn69JfBAHqbq4Vr3gFZPeWXDSDz5S2v9bQuGPCLSAgEf2MWjEEwRX
+        SZUR8KLGn4xuLVWGNbT0tOFzLFWGNS5tOSaoacbPN6ky7KizjNM7hY46OXZYxElFGW3ZdKl3dgUHmvB5
+        Zd8bRf7R4w5qN4JISzNOKvoDT3uI1ZSfdZxUWKMhFd/8SAEbqTJev/K5N7Rs+I7mUv0cgCebiSjpuXRX
+        ZwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="maxResetBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAADBJREFUKFONijEOACAQg/z/p88YcEWbAEvXfO4eTwtkC2QLZAtkC2QLZAtkC/Te
+        zAZz3k7AQ/0BAgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="miniBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAC1JREFUKFONyzEKAAAIAzH//+mKsxEU4nDQSvLCKIzCKIwy73VreWEURmHcUg0Q
+        GzTa2MTgzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="exitBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAGBJREFUKFN1kLENwDAIBDNYxvD+DQOkSHrCSYAgJsVJwJ8M8qGqYpwG9QSZUCzj
+        8sEkka0YTHJK9DH8yk2CKoZ8OylBlYCXHqee0cS6rp7RxO0mr1P+kzaZhg+fpMAylRe6i0Zy5JLKwgAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
 </root>
