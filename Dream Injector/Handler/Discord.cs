@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Dream_Injector.Handler.Structs;
+using System.Windows.Forms;
 using DiscordRPC;
+using static Dream_Injector.Handler.Structs;
 
 namespace Dream_Injector.Handler
 {
@@ -18,7 +19,7 @@ namespace Dream_Injector.Handler
             client.Initialize();
             client.SetPresence(new RichPresence()
             {
-                Details = $"Dream Injector",
+                Details = $"{Application.ProductName} {Application.ProductVersion}",
                 State = $"Idle",
                 Assets = new Assets()
                 {
@@ -34,7 +35,7 @@ namespace Dream_Injector.Handler
             {
                 client.SetPresence(new RichPresence()
                 {
-                    Details = $"Dream Injector",
+                    Details = $"{Application.ProductName} {Application.ProductVersion}",
                     State = $"Idle",
                     Assets = new Assets()
                     {
@@ -47,7 +48,7 @@ namespace Dream_Injector.Handler
             {
                 client.SetPresence(new RichPresence()
                 {
-                    Details = $"Dream Injector",
+                    Details = $"{Application.ProductName} {Application.ProductVersion}",
                     State = $"Injected DLL",
                     Assets = new Assets()
                     {
@@ -60,7 +61,7 @@ namespace Dream_Injector.Handler
             {
                 client.SetPresence(new RichPresence()
                 {
-                    Details = $"Dream Injector",
+                    Details = $"{Application.ProductName} {Application.ProductVersion}",
                     State = $"Injecting DLL",
                     Assets = new Assets()
                     {
@@ -73,7 +74,7 @@ namespace Dream_Injector.Handler
             {
                 client.SetPresence(new RichPresence()
                 {
-                    Details = $"Dream Injector",
+                    Details = $"{Application.ProductName} {Application.ProductVersion}",
                     State = $"Selecting DLL",
                     Assets = new Assets()
                     {
@@ -86,7 +87,7 @@ namespace Dream_Injector.Handler
             {
                 client.SetPresence(new RichPresence()
                 {
-                    Details = $"Dream Injector",
+                    Details = $"{Application.ProductName} {Application.ProductVersion}",
                     State = $"Selected DLL",
                     Assets = new Assets()
                     {
@@ -95,6 +96,11 @@ namespace Dream_Injector.Handler
                     }
                 });
             }
+        }
+
+        public static void ShutDown()
+        {
+            client.Dispose();
         }
     }
 }

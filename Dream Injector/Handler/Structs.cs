@@ -13,6 +13,7 @@ namespace Dream_Injector.Handler
         public static bool SelectingDLL;
         public static bool SelectedDLL;
         public static bool DLLInjecting;
+        public static bool GettingProcesses;
 
         public static void Idling()
         {
@@ -39,6 +40,11 @@ namespace Dream_Injector.Handler
             DLLInjecting = true;
         }
 
+        public static void Processes()
+        {
+            GettingProcesses = true;
+        }
+
         public static void Reset()
         {
             Idle = false;
@@ -53,6 +59,11 @@ namespace Dream_Injector.Handler
             SelectingDLL = false;
             SelectedDLL = false;
             DLLInjecting = false;
+        }
+
+        public static void ResetProcess()
+        {
+            GettingProcesses = true;
         }
     }
 }
